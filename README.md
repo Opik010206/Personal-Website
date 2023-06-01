@@ -29,5 +29,5 @@ Some of the technologies I use are :
 This is link my portfolio :
 
 ```sh
-[node app](https://rofiq-portfolio-web.netlify.app/)
+[https://rofiq-portfolio-web.netlify.app](https://rofiq-portfolio-web.netlify.app)
 ```
