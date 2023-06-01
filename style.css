@@ -1,0 +1,130 @@
+:root{
+    --text-color: #dc3545;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Navbar -----------------------  */
+.navbar ul li a.aktif{
+    color: var(--text-color);
+}
+.navbar ul li a:hover{
+    color: var(--text-color);
+}
+.is-sticky {
+    position: fixed;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+    /* padding: 5px 0; */
+}
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+
+
+
+/* Home --------------------------*/ 
+.home .imgHome .aing:hover{
+    transform: translateX(-20px);
+}
+.home .imgHome .shape{
+    top: 0; left: -50px; z-index: -2; transform: rotate(-20deg); width: 100%;
+}
+@media (max-width: 767.98px) { 
+    .home .imgHome .shape{
+        left: 0px;
+    }
+}
+
+
+
+/* Skill ------------------------ */
+.skill .border{
+    color: var(--text-color);
+}
+.skill .border:hover{
+    background-color: var(--text-color);
+    color: white;
+}
+
+
+
+
+/* About ------------------------ */
+.about .img::before{
+    content: "Hi, I'm Rofiq";
+    position: absolute;
+    left: -10px; top: 30px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    background-color: #fff;
+    box-shadow: -2px 5px 5px #00000034;
+    border-radius: 1rem;
+    opacity: 0;
+}
+.about .img::after{
+    content: "I'm Hacker :)";
+    position: absolute;
+    right: 20px; top: 120px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    background-color: #fff;
+    box-shadow: 2px 5px 5px #00000034;
+    border-radius: 1rem;
+    opacity: 0;
+}
+.about .img:hover.img::before{
+    animation: aboutOpacity 1s both;
+    /* transform: rotate(50deg); */
+}
+.about .img:hover.img::after{
+    animation: aboutOpacity 1s both 1s;
+    /* transform: rotate(50deg); */
+}
+@keyframes aboutOpacity {
+    100%{
+        opacity: 100%;
+    }
+}
+@media (max-width: 767.98px) { 
+    .about .img::before{
+        display: none;
+    }
+    .about .img::after{
+        display: none;
+    }
+}
+
+
+
+/* Portfolio ----------------------- */
+.portfolio img,
+.portfolio .col{
+    transition: 0.5s;
+}
+.portfolio .col:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.portfolio .col:hover{
+    box-shadow: 0 0 5px;
+}
