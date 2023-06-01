@@ -1,6 +1,6 @@
 # MY PORTFOLIO
 
-![Img 1](personalWebsite.png)
+![Img 1](portfolioWeb.gif)
 
 
 [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/) [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) 
